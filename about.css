@@ -1,0 +1,63 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('C:\Users\DAZE OFFICE ENT\Desktop\My Website\images\corner.jpg'); /* Change to your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: #333;
+  padding: 20px;
+  background-size: cover;      /* Fills the screen */
+background-position: center; /* Keeps focus centered */
+background-repeat: no-repeat;
+
+}
+/* Heading */
+h1 {
+  font-size: 2em;
+  color: #004080;
+  margin-bottom: 15px;
+}
+
+/* Paragraph */
+p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Button links */
+.button {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.button a {
+  text-decoration: none;
+}
+
+.button button {
+  background-color: #004080;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button button:hover {
+  background-color: #0066cc;
+}
+background-size: cover;      /* Fills the screen */
+background-position: center; /* Keeps focus centered */
+background-repeat: no-repeat;
