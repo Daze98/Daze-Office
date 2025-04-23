@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Daze Office Enterprise</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="cont.css">
   <link rel="icon" href="cute-optimized.png" type="image/png">
 </head>
 <body>
@@ -27,8 +28,18 @@
       </p>
 
       <br>
-      <label>Get in touch!</label>
-      <input type="text" name="Daze">
+      <form action="https://formspree.io/f/xrbqgqnp" method="POST">
+  <label for="name">Your Name:</label><br>
+  <input type="text" id="name" name="name" required><br><br>
+
+  <label for="date">Book a Date:</label><br>
+  <input type="date" id="date" name="booking_date" required><br><br>
+
+  <label for="message">Your Message:</label><br>
+  <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+  <button type="submit">Send Message</button>
+</form>
     </div>
 
     <br>
