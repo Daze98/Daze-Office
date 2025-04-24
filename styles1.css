@@ -19,7 +19,7 @@ body {
 
 
 /* Container styling */
-.container {
+.conta1iner {
   max-width: 800px;
   margin: auto;
   background-color: #ffffff;
@@ -27,6 +27,12 @@ body {
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto; /* centers horizontally */
+    padding: 20px;
+    background-color: #ffffff;
+  }
 
 /* Heading */
 h1 {
