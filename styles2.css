@@ -6,7 +6,7 @@ body {
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 10px;
   padding: 15px;
 }
@@ -28,28 +28,61 @@ body {
   display: none;
   position: fixed;
   z-index: 1000;
-  padding: 50px;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
   background: rgba(0,0,0,0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .lightbox-content {
-  margin: auto;
-  display: block;
-  max-width: 80%;
+  max-width: 90%;
   max-height: 80%;
 }
 
+/* Close Button */
 .close {
   position: absolute;
-  top: 20px;
-  right: 35px;
+  top: 15px;
+  right: 25px;
   color: white;
   font-size: 40px;
   font-weight: bold;
   cursor: pointer;
+}
+
+/* Navigation Buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  user-select: none;
+  transform: translateY(-50%);
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.prev:hover, .next:hover {
+  background: rgba(0,0,0,0.5);
+  border-radius: 5px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+  .prev, .next {
+    font-size: 25px;
+    padding: 8px;
+  }
 }
